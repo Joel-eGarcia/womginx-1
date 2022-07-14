@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 # install nginx, git, and curl
-RUN apt-get update && apt-get install -y nginx git curl
+RUN apt-get update && apt-get install -y nginx git curl nano vnstat
 
 # install nodejs
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && apt-get install -y nodejs
